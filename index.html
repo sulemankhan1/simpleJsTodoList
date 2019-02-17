@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Todo List</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- <script src="bootstrap.min.js" charset="utf-8"></script> -->
+    <style media="screen">
+      .remove_btn {
+        display: none;
+        margin: 0;
+      }
+      .list-group-item:hover {
+        background: #f8f8f8;
+      }
+      .list-group-item:hover > .remove_btn {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <br>
+      <h1>JS Todo List</h1>
+      <br>
+      <div class="row">
+        <div class="col-md-8">
+          <input type="text" class="form-control" id="task" placeholder="Add Task">
+        </div>
+        <div class="col-md-4">
+          <a href="#" class="btn btn-success" onclick="addTask()">Add</a>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-md-8">
+          <ul class="list-group" id="tasks_list">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+      <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
